@@ -49,7 +49,7 @@ graph TD
     F -.-> B
 ```
 
-## Example Input / Output
+## Example-1Input / Output
 - **User Input:** "Create a React app with a dark mode toggle, run it, and give me the link."
 - **Bot Action:** 
   1. Creates the React app in the user's VM.
@@ -58,12 +58,16 @@ graph TD
   4. Exposes the local port via a tunnel (e.g., Ngrok, Cloudflare).
 - **Bot Output:** "App deployed! Access it here: `https://dark-mode-xyz.trycloudflare.com`"
 
-## Evaluation Criteria (Student Deliverables)
-1. **Source Code**: Complete bot logic, agent integration, and containerized workspace management logic.
-2. **Setup Instructions**: Detailed `README.md` and `.env.example` file.
-3. **Concurrency Proof**: Clear implementation showing how 4+ parallel user sessions are isolated and handled (e.g., async, multi-threading).
-4. **Demo Video**: A 2-3 minute video demonstrating:
-   - History/context awareness.
-   - File generation and returning the file to chat.
-   - A live web application deployment with a working URL.
-   - Multiple users interacting simultaneously without collision.
+## Example-2 Input / Output
+   - **User Input:** "Write a python script to scrape top 10 trending news from DD news and organize and summarize and give me in html format."
+- **Bot Action:**
+  1. Creates the python script in the user's VM.
+  2. Runs the python script.
+  3. Create the html file
+- **Bot Output:** "Here is the html file with the summaries of top 10 trending news from DD news!" *(Attaches `news.html`)*
+- **User Input:** "Create a blog post on the 2nd news that you have given and give me in form of a markdown file and an image showing the effect of 2nd news"
+- **Bot Action:**
+  1. Reads the content of the 2nd news.
+  2. Creates the blog post in form of markdown file.
+  3. Create an image file showing the effect of 2nd news.
+- **Bot Output:** "Here is the blog post content & the image *(Attaches `blog.md` & `image.png`)*
