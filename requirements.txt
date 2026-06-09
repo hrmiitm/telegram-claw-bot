@@ -1,0 +1,17 @@
+# Core LangChain v1 (includes create_agent, tools, messages)
+langchain>=1.0.0
+
+# LangGraph (required by create_agent under the hood)
+langgraph>=0.4.0
+
+# LLM Provider (install the one you need)
+langchain-openai>=1.0.0
+# langchain-google-genai>=2.0.0
+# langchain-anthropic>=0.3.0
+# langchain-ollama>=0.3.0
+
+# Telegram Bot
+python-telegram-bot>=22.0
+
+# Environment Variables
+python-dotenv>=1.0.0
